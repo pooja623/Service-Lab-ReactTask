@@ -37,38 +37,33 @@ function Table() {
 
   return (
     <div class="p-6 shadow-lg rounded-lg bg-gray-100 text-gray-700">
-      <h1>Update : {updatedTime}</h1>
-      <h1>UpdateIso : {updatedTimeIso}</h1>
-      <h1>UpdateUk : {updatedTimeUk}</h1>
-      <h1>Disclaimer : {disclaimer}</h1>
-      <h1>chartName : {chartName}</h1>
+      <h1 class="font-semibold text-3xl mb-5">Time Of Currency Updated</h1>
 
-      {/* {Object.keys(bpi).length > 0 && (
-        <table className="flex flex-col">
-          <thead>
-            <tr>
-              <th className="text-align:center">Code</th>
-              <th>Symbol</th>
-              <th>Rate</th>
-              <th>Description</th>
-              <th>Rate Float</th>
-            </tr>
-          </thead>
-          <tbody>
-            {Object.keys(bpi).length > 0 &&
-              Object.keys(bpi).map((item) => (
-                <tr>
-                  <td>{bpi[item].code}</td>
-                  <td>{bpi[item].symbol}</td>
-                  <td>{bpi[item].rate}</td>
-                  <td>{bpi[item].description}</td>
-                  <td>{bpi[item].rate_float}</td>
-                </tr>
-              ))}
-          </tbody>
-        </table>
-      )} */}
+      <h2 class="font-normal text-2xl mb-2">Update Time : {updatedTime}</h2>
 
+      <hr class="my-3 border-gray-300" />
+      <h2 class="font-normal text-2xl mb-2">
+        Update Time Iso : {updatedTimeIso}
+      </h2>
+
+      <hr class="my-3 border-gray-300" />
+
+      <h2 class="font-normal text-2xl mb-2">
+        Update Time Uk : {updatedTimeUk}
+      </h2>
+      <p></p>
+      <hr class="my-3 border-gray-300" />
+
+      <h2 class="font-normal text-2xl mb-2 text-center ">Disclaimer</h2>
+      <p className=" text-base font-light leading-relaxed mt-0 mb-4 text-gray-800 text-center">
+        {disclaimer}
+      </p>
+      <hr class="my-2 border-gray-300" />
+
+      <h2 class="font-normal text-2xl mb-1 ">Chart Name : {chartName}</h2>
+      <hr class="my-2" />
+      <h3 class="font-semibold text-3xl mb-5">List of Coins with Rates</h3>
+      <hr class="my-2 border-gray-300" />
       <div class="flex flex-col">
         <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
